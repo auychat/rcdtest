@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Section2 - Question1</title>
+  </head>
+  <body>
+    <div class="row">
+      <!-- Left Column -->
+      <div class="column left">
+        <input type="number" id="first" placeholder="Enter number" />
+      </div>
+
+      <!-- Middle Column -->
+      <div class="column middle">
+        <select id="list" onchange="getSelectValue();">
+          <option value="isPrime">isPrime</option>
+          <option value="isFibonacci">isFibonacci</option>
+        </select>
+      </div>
+
+      <!-- Right Column -->
+      <div class="column right">
+        <p id="third"></p>
+      </div>
+    </div>
+  </body>
+  <script async="false" type="text/javascript" src="./app.js"></script>
+</html>

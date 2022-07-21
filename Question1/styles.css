@@ -1,0 +1,42 @@
+body {
+    background-color: pink;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+input {
+    border-radius: 5px;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+}
+
+.left {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.middle {
+    min-width: 100px;
+    width: calc(100% - 500px);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.right {
+    width: 300px;
+    margin: 0px;
+    text-align: center;
+}
+
+@media only screen and  (max-width: 600px) {
+    body {
+        overflow-x: scroll;
+        background-color: aquamarine;
+    }
+  }

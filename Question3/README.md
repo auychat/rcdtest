@@ -6,4 +6,4 @@ The code should be in a single js file, and can be run using “node yourfile.js
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-My code use "puppeteer" and "yargs" as a dependency. Please make sure you npm install it before running this code.
+My code use "puppeteer" and "yargs" as a dependencies. Please make sure you npm install it before running this code.

@@ -30,23 +30,20 @@ function getSelectValue() {
   let value = checkValue();
 
   if (selectedValue === "isPrime") {
-    console.log(selectedValue);
-    console.log(value);
+    // console.log(selectedValue);
+    // console.log(value);
     finalResult = isPrime(value);
-    console.log(finalResult);
+    // console.log(finalResult);
     document.getElementById("third").innerHTML = finalResult;
   }
 
   if (selectedValue === "isFibonacci") {
-    console.log(selectedValue);
-    console.log(value);
-    finalResult = console.log("call function = " + isFibonacci(value));
-    console.log(finalResult);
+    // console.log(selectedValue);
+    // console.log(value);
+    finalResult = isFibonacci(value);
+    // console.log(finalResult);
     document.getElementById("third").innerHTML = finalResult;
   }
-  
-
-  //   console.log(typeof(selectedValue));
 }
 
 //===== Check Prime number function =====//
@@ -63,20 +60,13 @@ function isPrime(num) {
   return true;
 }
 
-console.log(isFibonacci(13));
+// console.log(isFibonacci(13));
 //===== Check Fibonacci number function =====//
 function isFibonacci(num) {
-  for (let i = 1; i <= num; i++) {
-    if (0 + 1 !== i) {
-      return false;
-    }
-    if (1 + i !== i + 1) {
-      return false;
-    }
-    if (i + i !== i + 2) {
-      return false;
-    } else {
-      return true;
-    }
+  let fibSeq = [0, 1], i = 1, fibSeqL;
+  for (i; i <= num; i = (fibSeq[fibSeqL - 1] + fibSeq[fibSeqL])) {
+    fibSeq.push(i);
+    fibSeqL = fibSeq.length -1;
   }
+  return fibSeq[fibSeqL] === num;
 }
